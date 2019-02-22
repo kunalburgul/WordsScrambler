@@ -10,7 +10,7 @@ except IOError:
 
 filename = os.path.splitext(filepath)[0]   #Getting the file name
 output_filename = filename + "Scrambled"   #Name for the output filename using the input filename with joining Scrambled
-output_text = open("output_filename.txt", "w")   #Opening the output file in the read mode
+output_text = open(output_filename, "w")   #Opening the output file in the read mode
 
 # Function to shuffle the chars around
 def shuffle(word):
